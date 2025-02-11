@@ -22,6 +22,28 @@ ul{
     list-style: none;
 }
 
+.btn{
+    width: 159px;
+    height: 48px;
+    left: 1077px;
+    gap: 10px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+
+}
+.btn:hover{
+    background-color: #115673e7;
+}
+
+
 .container{
     /* background-color: aqua; */
     width: 91%;
@@ -54,7 +76,17 @@ header .navbar{
     width: 100%; */
     
 }
-
+header .navbar .btn{
+    width:210px;
+  
+    
+}
+header .navbar .btn a{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+}
 header .navbar nav ul{
     display: flex;
     gap: 40px;
@@ -264,26 +296,7 @@ main .offer h2{
 
 
 }
-.btn{
-    width: 159px;
-    height: 48px;
-    left: 1077px;
-    gap: 10px;
-    border-radius: 8px;
-    padding-top: 16px;
-    padding-right: 48px;
-    padding-bottom: 16px;
-    padding-left: 48px;
-    color: white;
-    background-color: var(--primary-color);
-    cursor: pointer;
-    font-weight: 700;
-    border: none;
 
-}
-.btn:hover{
-    background-color: #115673e7;
-}
 
 main .cards{
    

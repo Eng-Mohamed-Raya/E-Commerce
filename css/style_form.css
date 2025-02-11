@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/Desktop1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+:root{
+    --primary-color:#115573;
+}
+.parent{
+    width: 750px;
+    margin:2rem auto;
+    padding:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.conteinar{
+    /* background-color:#ffffff;  */
+    height:80%;
+    width:70% ;
+    margin: 4rem auto 0;
+    padding:15px 15px;
+    /* box-shadow:0px 0px 10px #a4a7b4; */
+
+}
+.conteinar>p{
+    font-size: 25px;
+    font-weight: 700;
+margin-bottom: 10px;
+}
+.conteinar div{
+    margin-bottom: 20px;
+}
+.conteinar div span{
+    color: rgb(130, 151, 168);
+}
+.conteinar div a{
+    font-size: 20px;
+    color:var(--primary-color);
+}
+.conteinar form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: blue; */
+}
+.conteinar form .input{
+    width: 100%;
+    position: relative;
+}
+.conteinar form .input .icon{
+    position: absolute;
+    top:50px;
+    left:5px
+}
+.conteinar form .input .icon-eye{
+    position: absolute;
+    top:50px;
+    right: 100px;
+    cursor: pointer;
+}
+.conteinar form label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.conteinar form .input label{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+#pass {
+    font-weight: bold;
+}
+.conteinar form input{
+    margin-bottom: 15px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(144, 161, 176) ;
+    width: 80%;
+    margin-top: 15px;
+    outline-color: var(--primary-color);
+}
+.conteinar form .check_box {
+    width:100%;
+}
+.conteinar form .check_box input{
+    width: 5%;
+    cursor: pointer;
+}
+
+.conteinar form .check_box a{
+   margin-left: 1rem;
+   text-decoration: none;
+}
+.conteinar form .check_box label{
+    font-size: 15px;
+}
+.conteinar form  button{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.conteinar form  button[type="submit"]{
+    background-color:var(--primary-color);
+    font-size: 20px;
+    color: white;
+}
+.conteinar form p{
+    margin-bottom: 10px;
+    margin-left: 30%;
+}
+.conteinar form .s_u_google{
+    width: 100%;
+    text-decoration: none;
+   
+}
+.conteinar form .s_u_google button{
+    outline: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.conteinar form .s_u_google button img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media  (max-width: 1000px){
+    .parent{
+        width: 100%;
+        padding: 0;
+    }
+    .conteinar{
+        width: 90%;
+        margin: 2rem auto;
+    }
+   
+    .conteinar form input{
+        width: 100%;
+    }
+   
+    
+    .conteinar form  button{
+        width: 100%;
+    }
+    
+   
+    .conteinar form .s_u_google button img{
+        width: 25px;
+    }
+    .conteinar form p{
+        margin: auto;
+    }
+    .conteinar form .input .icon-eye{
+        right: 15px;
+    }
+    
+}

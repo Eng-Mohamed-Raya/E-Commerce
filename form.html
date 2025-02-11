@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_form.css">
+    <title>luxira | Login</title>
+</head>
+<body>
+    <div class="parent">
+
+    
+    <div class="conteinar">
+        <p>Hi, Welcome to luxira!</p>
+        <div>
+            <span>New here?</span>
+            <a  href="./signup.html">Creat an account</a>
+        
+        </div>
+        <form action="./index.html" method="post">
+            <div class="input">
+                <img class="icon"src="./images/sms.svg" alt="sms" >
+                <label for="Email">Email address </label>
+                <input type="email" name="Email" id="Email" required placeholder="Example@gmail.com">
+            
+            </div>
+            <div class="input">
+                <img class="icon" src="./images/lock.png" alt="sms" >
+                <img class="icon-eye"src="./images/eye-slash.png" alt="sms" >
+                <label for="pass">passward </label>
+                <input type="password" name="passward" id="pass" required placeholder="............................">
+            </div>
+            <div class="check_box">
+                <input type="checkbox" name="remember_device" id="cb" >
+                <label for="cb">remember this device</label>
+                <a href="./forget_passward.html">Forget passward?</a>
+            </div>
+           
+            <button id="submit" type="submit">log in</button>
+            <p>Or login with</p>
+            <a href="#" class="s_u_google"><button type="button"> <img src="./images/search.png" alt="Google logo">Sing up with Google</button></a>
+        </form>
+    </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

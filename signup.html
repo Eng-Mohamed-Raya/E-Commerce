@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_signup.css">
+    <link rel="shortcut icon" href="./images/user-plus-solid.svg" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="parent">
+
+    
+        <div class="conteinar">
+            <p>Hi, Welcome to luxira!</p>
+            <span>Register your account </span>
+            <form action="./index.html" method="post">
+                <div class="user_detiels">
+                    <div class="fname">
+                        <img class="icon" src="./images/user-edit.svg" alt="sms" >
+                        <p>First name</p>
+                    <input type="text" name="furname" id="furname" required placeholder="sashahssa">
+
+                    </div>
+                    <div class="surname">
+                        <img class="icon" src="./images/user-edit.svg" alt="sms" >
+                        <p>Surname</p>
+                        <input type="text" name="Surname" id="Surname" required placeholder="sashahssa">
+
+                    </div>
+                    <div class="email">
+                        <img class="icon"src="./images/sms.svg" alt="sms" >
+                        <p>Email address</p>
+                        <input type="email" name="Email" id="Email" required placeholder="isisis@gmail.com">
+
+                    </div>
+                    <div class="gender">
+                        <img class="icon" src="./images/frame.svg" alt="sms" >
+                        <p>Gender</p>
+                        <select name="gender" id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="passward">
+                        <img class="icon" src="./images/lock.png" alt="sms" >
+                        <p>passward</p>
+                        <input type="password" name="passward" id="pass" required placeholder="............................">
+
+                    </div>
+                    <div class="confiarm_pass">
+                        <img class="icon" src="./images/lock.png" alt="sms" >
+                        <p>Confiarm passward </p>
+                        <input type="password" name="confiarm_pass" id="confiarm_pass" required placeholder="01259884">
+
+                    </div>
+                    
+                </div>
+                <div class="sign_btn">
+                    <button id="sign_btn" type="submit">Register</button>
+                    <p>Or login with</p>
+                    <a href="#" class="s_u_google"><button type="button"> <img src="./images/search.png" alt="Google logo">Sing up with Google</button></a>
+                </div>
+            </form>
+        </div>
+        </div>
+        <script src="./js/signup.js"></script>
+</body>
+</html>
