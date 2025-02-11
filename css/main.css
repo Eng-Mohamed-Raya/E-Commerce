@@ -4,6 +4,12 @@
 :root{
     --primary-color:#115573;
 }
+*{
+    z-index: 1000;
+}
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: "Inter", serif;
@@ -16,3 +22,774 @@ ul{
     list-style: none;
 }
 
+.container{
+    /* background-color: aqua; */
+    width: 91%;
+    margin: auto;
+}
+
+/* start header */
+header{
+    margin-top: 46px;
+    /* margin-bottom: 46px; */
+    display: flex;
+    flex-direction: column;
+    
+}
+header .logo{
+width: 118px;
+height:53.45px;
+    
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: var(--primary-color); */
+    padding: 10px 0;
+    /* position: fixed;
+    z-index: 2000;
+    top: 0;
+    width: 100%; */
+    
+}
+
+header .navbar nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+header .navbar nav ul li{
+    line-height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+.uniqe-text{
+    color: var(--primary-color);
+}
+header .navbar nav ul .categories{
+    display: flex;
+ align-items: center;
+}
+header .navbar nav ul .categories .arrow-down{
+    margin-left: 10px;
+}
+
+header .navbar #language{
+font-size: 18px;
+line-height: 27px;
+font-weight: 700;
+}
+header .navbar .img-icons{
+    margin-right: 1.5rem;
+    
+}
+header .navbar .img-icons a img{
+    width: 32px;
+    height: 32px;
+   margin-right: 15px;
+}
+
+
+header .searchbar{
+    /* background-color: aqua; */
+    margin-top: 10px;
+}
+header .searchbar form{
+    position: relative;
+    z-index: 1000;
+}
+ header .searchbar form select,
+ header .searchbar form #search{
+    border-radius: 10px;
+    border: 2px solid #171717;
+    
+}
+ header .searchbar form select{
+    width: 23%;
+    padding:12px 25px;
+}
+header .searchbar form #location-icon{
+    position: absolute;
+    top: 13px; 
+    left: 8px;
+    height: 24px;
+    width: 24px;
+}
+header .searchbar form #search{
+    width: 59%;
+    margin: 3px;
+    padding:14px 18px;
+   
+}
+ header .searchbar form #search-icon{
+    position: absolute;
+    right: 19%;
+    top: 14px;
+    height: 24px;
+    width: 24px;
+   
+}
+
+ header .searchbar form input[type="button"]{
+    width: 15%;
+    padding:8px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+ header .searchbar form input[type="button"]:hover{
+    cursor: pointer;
+    background-color:rgba(15, 77, 104, 0.736) ;
+}
+
+/* end header */
+
+/* start main */
+.parent{
+    background-image: url(../images/circles.png);
+    /* background: linear-gradient(to right,rgba(185, 197, 202, 0.179)  ,rgba(185, 197, 202, 0.179)), url(./images/circles.svg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+#home{
+    height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home .home-content {
+    width: 50%;
+    padding: 0 20px;
+    font-size: 36.49px;
+    font-weight: 500;
+    line-height: 54.74px;
+}
+#home .home-content span{
+    font-weight: 600;
+}
+#home .img-home{
+display: flex;
+justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  position: relative;
+  z-index: 0;
+}
+#home .img-home ._smartphone{
+    position: absolute;
+    right: 75%;
+    z-index: -1;
+    width:345px;
+}
+#home .img-home ._3d-vr-gaming{
+    width:515.62px;
+}
+
+#dotted{
+    position: relative;
+}
+#dotted div{
+    position: absolute;
+   bottom: -100px;
+   left: 50%;
+}
+
+
+
+#categories {
+    /* background-color: #115573; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+    gap: 30px;
+
+}
+#categories .categoey-phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    border-radius: 8px;  
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px 0px #00436514;
+
+  
+}
+#categories .categoey-phone img{
+    width: 56px;
+    height: 56px;
+    top: 25px;
+    left: 57px;
+    margin-bottom: 10px;
+
+}
+#categories .categoey-phone p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color:var(--primary-color)
+    
+}
+
+
+
+
+
+
+main .offer .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+main .offer h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+
+
+}
+.btn{
+    width: 159px;
+    height: 48px;
+    left: 1077px;
+    gap: 10px;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-right: 48px;
+    padding-bottom: 16px;
+    padding-left: 48px;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+
+}
+.btn:hover{
+    background-color: #115673e7;
+}
+
+main .cards{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 53px;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+main .cards .card{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main .cards .card .img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+main .cards .card .img span{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right:10px;
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 34px;
+    height: 34px;
+
+}
+main .cards .card .img span i{
+padding: 7px 0;
+}
+main .cards .card .img span i:hover{
+    color: red;
+    cursor: pointer;
+}
+main .cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .cards .card .content p{
+    font-size: 18px;
+    padding: 10px 0;
+}
+main .cards .card .content span{
+    font-size: 20px;
+    color: rgb(240, 12, 12);
+}
+main .cards .card .content .del_offer {
+    color:black;
+    font-size: 15px;
+}
+main .cards .card .content .del_offer del{
+    color:black;
+    font-size: 15px;
+}
+main .cards .card .content .gold{
+    color: gold;
+}
+main .cards .card .content .no_gold{
+    color: rgb(123, 120, 120);
+}
+main .cards .card .content .btn_add_to_cards {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+
+}
+main .cards .card .content .btn_add_to_cards button{
+    background-color: rgb(15,77,104);
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.89px;
+
+
+}
+main .cards .card .content .btn_add_to_cards button:hover{
+   cursor: pointer;
+    background-color: #145977;
+}
+.arrow-right-left{
+    width: 108px;
+    height: 46px;   
+    gap: 16px;
+
+
+}
+.arrow-right-left span{
+    width: 50px;
+    height: 550px;
+}
+.arrow-right-left i{
+    margin: 10px 10px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+cursor: pointer;
+}
+
+.view-all-products{
+   
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   width: 100%;
+}
+.view-all-products .btn{
+    width: 234px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0;
+    padding-left: 48px;
+
+}
+/* end main */
+
+
+
+
+/* start  footer */
+
+footer{
+    background-color:var(--primary-color);  
+}
+footer .continear{
+    width: 90%;
+    padding: 20px 20px 0 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items:center ;
+    
+}
+
+footer .continear .coulmn1 .social {
+    margin-top: 30px;
+}
+footer .continear .coulmn1 .social ul{
+    display: flex;
+    gap: 10px;
+}
+footer .continear .coulmn1 .social ul li i
+,footer .continear .coulmn  ul li a
+,footer .continear .coulmn  ul li{
+    color: white;
+    font-size: 14px;
+}
+footer .continear .coulmn  .row1{
+    font-size: 18px;
+}
+footer .continear .coulmn1 .row1{
+    color: white;
+    font-size:25px;
+    margin-bottom: 10px;
+}
+footer .continear .coulmn{
+    margin: 10px 5px;
+    padding-top: 20px;
+}
+footer .continear .coulmn ul{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+footer .copyright{
+    height: 13%;
+    /* background-color: rgb(25, 210, 86); */
+}
+footer .copyright p a{
+    margin: 0 1rem;
+}
+footer .copyright p,
+footer .copyright p a{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+/* End  footer */
+
+
+
+@media screen and (max-width: 900px){
+
+    /* start header */
+header{
+    margin-top: 20px;   
+}
+
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+header .navbar nav ul{
+    width: 100%;
+    gap: 40px;
+    margin: 10px;
+}
+header .navbar nav ul li{
+    font-weight: 600;
+    font-size: 25px;
+}
+header .navbar #language{
+    margin: 10px;
+    font-size: 25px;
+    }
+    header .navbar .img-icons{
+        margin-right: 0rem;
+        
+    }
+    header .navbar .img-icons a img{
+       margin-right: 20px;
+    }
+    
+    header .searchbar{
+        /* background-color: aqua; */
+        margin-top: 10px;
+    }
+     header .searchbar form select{
+        width: 24%;
+    }
+    header .searchbar form #location-icon{
+        top: 16px; 
+        left: 5px;
+    }
+    header .searchbar form #search{
+        width: 40%;
+    }
+     header .searchbar form #search-icon{
+        right: 39%;
+        top: 12px;
+       
+    }
+    
+     header .searchbar form input[type="button"]{
+        width: 30%;
+    }
+
+
+#home .home-content {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+#home .img-home ._3d-vr-gaming{
+    width:350px;
+}
+#home .img-home ._smartphone{
+    width:200px;
+    right: 60%;
+    top:5%;
+}
+#dotted div{
+    position: absolute;
+   bottom: 0px;
+   left: 45%;
+}
+
+#categories {
+    margin-bottom: 5rem;
+    gap: 15px;
+
+}
+
+
+main .offer h2{
+    font-size: 30px;
+}
+.arrow-right-left i{
+    margin: 15px 10px;
+}
+
+.view-all-products .btn{
+    width: 200px;
+}
+
+
+footer .continear{
+    padding-left: 2rem;
+    width: 95%;
+    align-items:flex-start ;
+}
+footer .continear .coulmn1 .social {
+    margin-top: 10px;
+}
+footer .continear .coulmn1 .row1{
+    margin-top: 18px;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+footer .continear .coulmn1 .social ul li i
+,footer .continear .coulmn  ul li a
+,footer .continear .coulmn  ul li{
+    font-size: 10px;
+}
+footer .continear .coulmn  .row1{
+    font-size: 15px;
+}
+footer .continear .coulmn {
+    font-size: 20px;
+    margin:0 10px;
+}
+
+footer .copyright p a{
+    margin: 0 0.2rem;
+}
+footer .copyright p,
+footer .copyright p a{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}  
+}
+
+
+
+
+
+
+@media screen and (max-width:450px) {
+    
+    .container{
+        /* background-color: aqua; */
+        width: 95%;
+        margin: auto;
+    }
+    /* start header */
+header{
+    margin-top: 10px;   
+}
+header .logo{
+width: 118px;
+height:53.45px;
+    
+}
+
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+header .navbar nav ul{
+    width: 100%;
+    gap: 20px;
+    margin: 10px;
+}
+header .navbar #language{
+    margin: 10px;
+    }
+    header .navbar .img-icons{
+        margin-right: 0rem;
+        
+    }
+    header .navbar .img-icons a img{
+       margin-right: 20px;
+    }
+    
+    header .searchbar{
+        /* background-color: aqua; */
+        margin-top: 10px;
+    }
+    header .searchbar form{
+        position: relative;
+        z-index: 1000;
+    }
+     header .searchbar form select,
+     header .searchbar form #search{
+        border-radius: 10px;
+        border: 2px solid #171717;
+        
+    }
+     header .searchbar form select{
+        width: 24%;
+        padding:12px 10px 12px 16px;
+    }
+    header .searchbar form #location-icon{
+        top: 18px; 
+        left: 5px;
+        height: 15px;
+        width: 15px;
+    }
+    header .searchbar form #search{
+        width: 40%;
+        padding-left: 1px;
+        padding-right: 0px;
+       
+    }
+     header .searchbar form #search-icon{
+        right: 36%;
+        top: 10px;
+        height: 15px;
+        width: 15px;
+       
+    }
+    
+     header .searchbar form input[type="button"]{
+        width: 30%;
+    }
+
+
+    
+#home{
+    height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home .home-content {
+    width: 100%;
+    padding: 0 0px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#home .img-home ._3d-vr-gaming{
+    width:220px;
+}
+#home .img-home ._smartphone{
+    width:150px;
+    right: 60%;
+    top:0%;
+}
+#dotted div{
+    position: absolute;
+   bottom: 45px;
+   left: 45%;
+}
+
+#categories {
+    margin-top:1rem;
+    margin-bottom: 5rem;
+    gap: 15px;
+
+}
+
+
+main .offer h2{
+    font-size: 30px;
+}
+.arrow-right-left i{
+    margin: 15px 10px;
+}
+
+.view-all-products .btn{
+    width: 200px;
+}
+
+
+footer .continear{
+    padding-left: 2rem;
+    width: 95%;
+    align-items:flex-start ;
+}
+footer .continear .coulmn1 .social {
+    margin-top: 10px;
+}
+footer .continear .coulmn1 .row1{
+    margin-top: 18px;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+footer .continear .coulmn1 .social ul li i
+,footer .continear .coulmn  ul li a
+,footer .continear .coulmn  ul li{
+    font-size: 10px;
+}
+footer .continear .coulmn  .row1{
+    font-size: 15px;
+}
+footer .continear .coulmn {
+    font-size: 20px;
+    margin:0 10px;
+}
+
+footer .copyright p a{
+    margin: 0 0.2rem;
+}
+footer .copyright p,
+footer .copyright p a{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+}
