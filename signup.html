@@ -14,48 +14,38 @@
         <div class="conteinar">
             <p>Hi, Welcome to luxira!</p>
             <span>Register your account </span>
-            <form action="./index.html" method="post">
+            <form action="./index.html" method="post" id="signupForm">
                 <div class="user_detiels">
                     <div class="fname">
-                        <img class="icon" src="./images/user-edit.svg" alt="sms" >
+                        <img class="icon" src="./images/user-edit.svg" alt="sms">
                         <p>First name</p>
-                    <input type="text" name="furname" id="furname" required placeholder="sashahssa">
-
+                        <input type="text" name="furname" id="furname" required placeholder="John">
                     </div>
                     <div class="surname">
-                        <img class="icon" src="./images/user-edit.svg" alt="sms" >
+                        <img class="icon" src="./images/user-edit.svg" alt="sms">
                         <p>Surname</p>
-                        <input type="text" name="Surname" id="Surname" required placeholder="sashahssa">
-
+                        <input type="text" name="surname" id="surname" required placeholder="Doe">
                     </div>
                     <div class="email">
-                        <img class="icon"src="./images/sms.svg" alt="sms" >
+                        <img class="icon" src="./images/sms.svg" alt="sms">
                         <p>Email address</p>
-                        <input type="email" name="Email" id="Email" required placeholder="isisis@gmail.com">
-
+                        <input type="email" name="email" id="email" required placeholder="example@gmail.com">
                     </div>
-                    <div class="gender">
-                        <img class="icon" src="./images/frame.svg" alt="sms" >
-                        <p>Gender</p>
-                        <select name="gender" id="gender" required>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
+                    <div class="phone">
+                        <img class="icon" src="./images/frame.svg" alt="sms">
+                        <p>Phone</p>
+                        <input type="text" name="phone" id="phone" placeholder="0111111111">
                     </div>
-                    <div class="passward">
-                        <img class="icon" src="./images/lock.png" alt="sms" >
-                        <p>passward</p>
-                        <input type="password" name="passward" id="pass" required placeholder="............................">
-
+                    <div class="password">
+                        <img class="icon" src="./images/lock.png" alt="sms">
+                        <p>Password</p>
+                        <input type="password" name="password" id="pass" required placeholder="********">
                     </div>
-                    <div class="confiarm_pass">
-                        <img class="icon" src="./images/lock.png" alt="sms" >
-                        <p>Confiarm passward </p>
-                        <input type="password" name="confiarm_pass" id="confiarm_pass" required placeholder="01259884">
-
+                    <div class="confirm_pass">
+                        <img class="icon" src="./images/lock.png" alt="sms">
+                        <p>Confirm Password</p>
+                        <input type="password" name="confirm_pass" id="confirm_pass" required placeholder="********">
                     </div>
-                    
                 </div>
                 <div class="sign_btn">
                     <button id="sign_btn" type="submit">Register</button>
@@ -63,6 +53,7 @@
                     <a href="#" class="s_u_google"><button type="button"> <img src="./images/search.png" alt="Google logo">Sing up with Google</button></a>
                 </div>
             </form>
+            
         </div>
         </div>
         <script src="./js/signup.js"></script>

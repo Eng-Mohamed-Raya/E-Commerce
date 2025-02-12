@@ -33,7 +33,7 @@ body{
     font-weight: 700;
 margin-bottom: 10px;
 }
-.fname,.surname,.email,.gender,.passward,.confiarm_pass{
+.fname,.surname,.email,.phone,.password,.confirm_pass{
     position: relative;
 }
 .icon{
@@ -53,7 +53,7 @@ margin-bottom: 10px;
     gap: 20px;
     
 }
-.conteinar form .user_detiels input,.conteinar form .user_detiels select{
+.conteinar form .user_detiels input{
     width:100%;
     padding: 10px  2rem;
     border-radius: 5px;

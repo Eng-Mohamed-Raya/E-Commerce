@@ -1,48 +1,75 @@
-let signup=document.getElementById("sign_btn");
 
-
-signup.addEventListener("submit",async function(event) {
-
+document.getElementById("signupForm").addEventListener("submit", async function (event) {
     event.preventDefault();
-    let fname=document.getElementById("furname").value;
-    let sname=document.getElementById("Surname").value;
-    let email=document.getElementById("Email").value;
-    let password=document.getElementById("pass").value;
-    let confirm_password=document.getElementById("confiarm_pass").value;
-    let gender=document.getElementById("gender").value;
-    
-    if(password!=confirm_password){
-        alert("Passwords do not match");
+
+    let signupButton = document.getElementById("sign_btn");
+    signupButton.disabled = true; 
+    signupButton.textContent = "⏳ Processing...";
+
+    let firstName = document.getElementById("furname").value.trim();
+    let surname = document.getElementById("surname").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("pass").value;
+    let confirmPassword = document.getElementById("confirm_pass").value;
+    let phone = document.getElementById("phone").value.trim();
+    let address = "Egypt";  
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        signupButton.textContent = "Sign Up";
+        signupButton.disabled = false;
         return;
     }
-    console.log("sending data :",{fname,sname,email,password,confirm_password});
 
-    try{
-        let response=await fetch("https://orientonline.info/api/register",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
+    let userData = {
+        name: `${firstName} ${surname}`,
+        email: email,
+        password: password,
+        password_confirmation: confirmPassword,
+        phone: phone,
+        address: address,
+    };
+
+    console.log("Sending data:", userData);
+
+    try {
+        let response = await fetch("https://orientonline.info/api/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
             },
-            body:JSON.stringify({fname,sname,email,password,confirm_password,gender})
+            body: JSON.stringify(userData)
         });
 
-        const data=await response.json();
-        if(response.ok){
-            console.log("regestraction successful : ",data);
-            alert("Registration successful ",data.message);
-            
-        }else{
-            console.log("error in registration : ",data);
-            alert("Error in registration ",data.message);
+        let data = await response.json();
+
+        if (response.ok) {
+            signupButton.textContent = "Sign Up Is Successful";
+            firstName="";
+            surname="";
+            email="";
+            password="";
+            confirmPassword="";
+            phone="";
+            alert(` Registration successful! 🎉\nMessage: ${data.message || "You have registered successfully!"}`);
+
+            setTimeout(() => {
+                window.location.href = "../index.html";
+            }, 1000); 
+
+        } else {
+            console.error("Error in registration:", data);
+            alert(` Registration failed!\nError: ${data.message || JSON.stringify(data)}`);
+            signupButton.textContent = "Sign Up";
+            signupButton.disabled = false;
         }
 
-    } 
-    catch(error){
-        console.error("Error in registration : ",error);
-        alert("Error in registration ",error.message);
+    } catch (error) {
+        console.error(" Network or Server Error:", error);
+        alert(" Error in registration: " + error.message);
+        signupButton.textContent = "Sign Up";
+        signupButton.disabled = false;
     }
-
-
-
 });
 
