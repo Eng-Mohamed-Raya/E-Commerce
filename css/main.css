@@ -97,7 +97,11 @@ header .navbar nav ul li{
     font-weight: 500;
     font-size: 18px;
     text-transform: capitalize;
+    cursor: pointer;
 
+}
+header .navbar nav ul li:hover{
+  text-decoration: underline solid rgb(14, 86, 117) 2px;
 }
 .uniqe-text{
     color: var(--primary-color);

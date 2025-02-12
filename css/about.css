@@ -64,6 +64,9 @@ header .navbar nav ul li{
     text-transform: capitalize;
 
 }
+header .navbar nav ul li:hover{
+    text-decoration: underline solid rgb(14, 86, 117) 2px;
+  }
 .uniqe-text{
     color: var(--primary-color);
 }
