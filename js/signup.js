@@ -55,7 +55,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
             alert(` Registration successful! 🎉\nMessage: ${data.message || "You have registered successfully!"}`);
 
             setTimeout(() => {
-                window.location.href = "../index.html";
+                window.location.href = "../index2.html";
             }, 1000); 
 
         } else {

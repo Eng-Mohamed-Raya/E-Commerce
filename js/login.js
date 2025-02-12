@@ -76,7 +76,7 @@
             
 //             localStorage.setItem("auth_token", data.token);
 //             alert(`Login successful`).setInterval(()=>{
-//                 window.location.href = 'index.html';
+//                 window.location.href = 'index2.html';
 //             })
 //         } else {
 //             alert(`Login failed: ${data.message || "Invalid credentials"}`);
@@ -201,7 +201,7 @@
 //         if (data?.token) {
 //             alert(`Login successful! Welcome, ${data?.user?.name || "User"}`);
 //             localStorage.setItem("auth_token", data.token);
-//             window.location.href = '../index.html';
+//             window.location.href = '../index2.html';
 //         } else {
 //             alert(`Login failed: Invalid credentials`);
 //         }
@@ -295,7 +295,7 @@
 //         if (data?.token) {
 //             // Redirect or handle login success
 //             localStorage.setItem("auth_token", data.token);
-//             window.location.href = "../index.html"; // Change this to your redirect page
+//             window.location.href = "../index2.html"; // Change this to your redirect page
 //             email.value="";
         
 //         } else {
@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (data?.token) {
                 // Save auth token
                 localStorage.setItem("auth_token", data.token);
-                window.location.href = "./index.html"; // Redirect after login
+                window.location.href = "./index2.html"; // Redirect after login
             } else {
                 passwordError.textContent = "Invalid credentials. Please check your email and password.";
             }
