@@ -29,8 +29,8 @@ body{
 .cards{
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,270px);
-    gap: 53px;
+    grid-template-columns: repeat(auto-fill,minmax(270px,.7fr));
+    gap: 50px;
     padding: 20px;
     margin-bottom: 1rem;
     
