@@ -280,7 +280,7 @@ letter-spacing: 0%;
     line-height: 28px;
     letter-spacing: -2%;
     text-transform: capitalize;
-    text-decoration: solid underline rgba(0, 0, 0, 0.56);
+    text-decoration: solid underline rgb(0, 0, 0);
 
  }
  .shoping-details .details{
@@ -357,14 +357,27 @@ letter-spacing: 0%;
     border: none;
    text-transform: capitalize;
  }
+ .buttons .edit-info{
+    background-color: white;
+    border: 1px solid #145977;
+ }
  .buttons button:hover{
     cursor: pointer;
-    background-color: #145977;
+    background-color: #145977ee;
  }
  .buttons button a
  {
     color: white;
     text-decoration: none;
+ }
+ .buttons .edit-info a
+ {
+    color: #145977;
+    text-decoration: none;
+ }
+ .buttons .edit-info:hover
+ {
+   background-color: #e1e1e1d3;
  }
 
 
