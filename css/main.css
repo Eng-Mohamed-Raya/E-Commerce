@@ -414,20 +414,24 @@ cursor: pointer;
 }
 
 .view-all-products{
-   
+   /* background-color: red; */
     margin-top: 1rem;
     margin-bottom: 2rem;
-   width: 100%;
+   /* width: 100%; */
 }
-.view-all-products .btn{
-    width: 234px;
+.view-all-products button{
     border-radius: 10px;
-    margin: auto;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-    padding-left: 48px;
-
+    padding: 20px 0;
+   width: 250px;
+    margin: 0 40%;
+    background-color: var(--primary-color);
+    border: none;
+    
+}
+.view-all-products button a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
 }
 /* end main */
 
