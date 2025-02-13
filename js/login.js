@@ -378,9 +378,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 🔹 Save email if "Remember this device" is checked
         if (rememberDevice.checked) {
-            localStorage.setItem("rememberedEmail", email.value);
+            sessionStorage.setItem("rememberedEmail", email.value);
         } else {
-            localStorage.removeItem("rememberedEmail");
+            sessionStorage.removeItem("rememberedEmail");
         }
 
         // 🔹 Disable button while submitting
@@ -420,7 +420,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (data?.token) {
                 // Save auth token
-                localStorage.setItem("auth_token", data.token);
+                sessionStorage.setItem("auth_token", data.token);
+                email.value="";
+                password.value="";
                 window.location.href = "./index2.html"; // Redirect after login
             } else {
                 passwordError.textContent = "Invalid credentials. Please check your email and password.";
