@@ -1,0 +1,391 @@
+body{
+    font-family: Poppins;
+}
+
+.line_check{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.line_check img{
+    width: 100%;
+}
+
+
+
+
+.containe-card-summary{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+
+
+
+
+
+.cards{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,270px);
+    gap: 53px;
+    padding: 20px;
+    margin-bottom: 1rem;
+    
+}
+.card{
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card .img{
+
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.cards .card .img span{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right:10px;
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards.card.img span i{
+    
+    padding: 7px 0;
+}
+
+.card .img span i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content p{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+ .content span{
+    font-size: 20px;
+    color: rgb(240, 12, 12);
+}
+
+.content .del_offer {
+    color:black;
+    font-size: 15px;
+}
+
+.content p{
+    display: block;
+}
+
+.content .del_offer del{
+    color:black;
+    font-size: 15px;
+}
+
+.content span{
+    font-size: 15px;
+}
+
+.content .gold{
+    color: gold;
+}
+
+.content .no_gold{
+    color: rgb(123, 120, 120);
+}
+
+.content .btn_add_to_cards {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+
+}
+
+.size{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+font-weight: 400;
+font-size: 16px;
+line-height: 20.2px;
+letter-spacing: 0%;
+color: #00000099;
+}
+.size select{
+   border: 1px solid ;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.2px;
+    letter-spacing: 0%;
+    color: #0000004D;
+}
+
+
+
+
+
+
+.content .btn_add_to_cards {
+    background-color: rgb(15,77,104);
+    width: 100%;
+    padding:10px 20px ;
+    border: none;
+    border-radius: 8px;
+    display:flex ;
+    justify-content: space-between;
+   align-items: center;
+
+
+}
+.content .btn_add_to_cards span{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25.25px;
+    
+}
+.content .btn_add_to_cards img ,
+.content .btn_add_to_cards .add{
+    cursor: pointer;
+}
+
+
+
+ .order-summary{
+    border: #145977 solid 1px;
+    border-radius: 13px;
+    width: 600px;
+    height: fit-content;
+    padding: 48px;
+    margin-bottom: 5rem;
+    margin-top: 10px;
+ }
+ .order-summary .title{
+    margin: 1rem 0;
+ }
+ .order-summary .title p{
+    color:#115573;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    
+ }
+ .order-summary .subtotal,.order-summary .total{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    color: #0A0D13;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .order-summary .total{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+ }
+ .order-summary .total .total-price{
+
+font-weight: 500;
+font-size: 36px;
+line-height: 18px;
+letter-spacing: 0%;
+
+ }
+ .order-summary .total div .taxes{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #ACACAC;    
+    margin-top: 8px;
+ }
+ .order-summary button{
+    width: 100%;
+    color: white;;
+    background-color: #115573;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    border: none;
+ }
+ .order-summary button:hover{
+    cursor: pointer;
+    background-color: #145977;
+ }
+ .order-summary button a
+ {
+    color: white;
+    text-decoration: none;
+ }
+
+
+
+
+
+ .shoping-details{
+    /* background-color: red; */
+    border: 1px solid #115573;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+ }
+ .shoping-details .title{
+    color:#115573;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    text-decoration: solid underline rgba(0, 0, 0, 0.56);
+
+ }
+ .shoping-details .details{
+
+    display: grid;
+    grid-template-columns:repeat(auto-fill,1fr);
+     margin-top: 10px;
+ }
+ .shoping-details .details .center,
+ .shoping-details .details .name{
+
+   display:flex ;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .shoping-details .details .name {
+    width: 50%;
+    justify-content: flex-start;
+    color:#115573;
+    margin-top: 10px;
+ }
+ .shoping-details .details .name span{
+    margin: 20px;
+    font-size: 27px;
+    font-weight: 800;
+    width: 100px;
+   
+ }
+ .shoping-details .details .name p{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    border: 1px solid #115573;
+    padding: 10px;
+    width: 100%;
+ }
+ .payment_method{
+    width: 50%;
+    margin-left: 10px;
+ }
+ .payment_method span{
+    margin: 10px;
+    font-size: 27px;
+    font-weight: 800;
+    width: 100px;
+    color:#115573;
+ }
+
+ .payment_method input{
+    margin: 10px;
+    padding: 40px;
+    margin-right: 4rem;
+    cursor: pointer;
+    
+ }
+
+ .buttons{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+   margin-top: 1rem;
+ }
+ .buttons button{
+    width: 250px;
+    margin: auto;
+    color: white;;
+    background-color: #115573;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    border: none;
+   text-transform: capitalize;
+ }
+ .buttons button:hover{
+    cursor: pointer;
+    background-color: #145977;
+ }
+ .buttons button a
+ {
+    color: white;
+    text-decoration: none;
+ }
+
+
+ .thank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+ }
+
+ .thank img{
+    width: 530px;
+ }
+ .thank p{
+   
+    font-weight: 600;
+    font-size: 72.1px;
+    line-height: 108.15px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+ }
+ 
