@@ -7,9 +7,9 @@
     <ul>
         <li>Mohamed Yasser Raya – Frontend Developer   <a href="https://www.linkedin.com/in/mohamedyasserraya"><img src="images/linkedin-brands-solid.svg" width="15px"></a>
         </li>
-        <li>Mohamed Elsayed Saleh – Frontend Developer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
-        <li>Marwa Darwish Ui/UX Designer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
-        <li>Mariam Nader – Backend Developer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
+        <li>Mohamed Elsayed Saleh – Frontend Developer   <a href="https://www.linkedin.com/in/mohamed-elsayed-saleh-885902251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
+        <li>Marwa Darwish Ui/UX Designer   <a href="https://www.linkedin.com/in/marwa-darwish-a66681223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
+        <li>Mariam Nader – Backend Developer   <a href="https://www.linkedin.com/in/mariam-alsherbini-376881305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
     </ul>
 
   <h2>✨ Features</h2>
