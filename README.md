@@ -5,12 +5,11 @@
 
    <h2>👨‍💻 Team Members</h2>
     <ul>
-        <li>Mohamed Yasser Raya – Frontend Developer
-        <img src="images/Icon-Linkedin.svg">
+        <li>Mohamed Yasser Raya – Frontend Developer   <a href="https://www.linkedin.com/in/mohamedyasserraya"><img src="images/linkedin-brands-solid.svg" width="15px"></a>
         </li>
-        <li>Mohamed Elsayed Saleh – Frontend Developer</li>
-        <li>Marwa Darwish Ui/UX Designer</li>
-        <li>Mariam Nader – Backend Developer</li>
+        <li>Mohamed Elsayed Saleh – Frontend Developer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
+        <li>Marwa Darwish Ui/UX Designer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
+        <li>Mariam Nader – Backend Developer   <a><img src="images/linkedin-brands-solid.svg" width="15px"></a></li>
     </ul>
 
   <h2>✨ Features</h2>
